@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+    <div class="header">
+
+        <img class="circle" src="images/pattern-circles.svg">
+
+        <div class="header-second">
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial.<br> No credit card required.</p>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="container">
+            <div class="main-left">
+                <p class="data1" id="data1">100k</p>
+                Pageviews
+            </div>
+
+
+
+            <div>
+                <div class="main-right">
+                    <p class="data2" id="data2"> $16.00</p> /month
+                </div>
+            </div>
+            <div class="range-slider">
+                <div class="bar"><span class="fill js-fill" id="range"></span></div>
+                <input type="range" min="0" max="100" value="50" step="25" class="sliderrange" id="range-slider">
+
+            </div>
+        </div>
+        <div class="middle">
+            Monthly Billing
+
+            <label class="switch">
+            <input type="checkbox" id="check">
+            <span class="slider round"></span>
+            </label> Yearly Billing
+            <div class="discount"><span class="dis">25% discount</span><span class="disc">-25%</span></div>
+
+        </div>
+
+        <hr>
+
+
+
+        <div class="content">
+
+            <div class="content-left">
+
+                <div class="a">
+                    <img src="images/icon-check.svg" alt="check" class="check">
+                    <div class="check">Unlimited websites</div>
+                </div>
+                <div class="a">
+                    <img src="images/icon-check.svg" alt="check" class="check">
+                    <div class="check">100% data ownership</div>
+                </div>
+                <div class="a">
+                    <img src="images/icon-check.svg" alt="check" class="check">
+                    <div class="check">Email reports</div>
+                </div>
+
+
+            </div>
+
+            <div class=content-right>
+
+                <button class="btn" type="submit">Start my trial</button>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Parul1923">Parul Gupta</a>.
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
